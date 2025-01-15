@@ -6,7 +6,7 @@ import numpy as np
 import joblib
 from scipy import stats
 
-st.title("XGBoost-based Prediction of central nervous system adverse events in Pan-cancer pain patients administered with oxycodone sustained-release")
+st.title("XGBoost-based Prediction of central nervous system adverse events in Pan-cancer pain patients administered with oxycodone sustained-release formulation")
 # Create a function to generate HTML for person icons
 def generate_person_icons(filled_count, total_count=100):
     # SVG person icon
@@ -137,7 +137,7 @@ if st.button('Prediction'):
         # Right column: show prediction results
         with st.container():
             st.header("Your result")
-            st.markdown(f"The probability that SCLC patients benefit from chemotherapy is (95% confidence interval):")
+            st.markdown(f"The probability that Pan-cancer pain patients how likely occur central nervous system adverse events is (95% confidence interval):")
             result_html = f"""
             <div style="display: flex; align-items: center;">
                 <span style="color:red; font-weight:bold; font-size:48px;">{prediction_percentage}%</span>
